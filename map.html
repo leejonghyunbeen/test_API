@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=613d846860c2aa370d295a277fb9c9a7"></script>
+    <div id="map" style="width:500px; height:400px; background:aqua;"></div>
+
+
+
+    <script>
+            var container = document.getElementById('map');
+
+            var options = {
+                center: new kakao.maps.LatLng(37.5665, 126.9780),
+                level: 5 
+            };
+
+            var map = new kakao.maps.Map(container, options);
+            </script>
+</body>
+</html>
